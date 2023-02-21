@@ -1,32 +1,32 @@
 #include "main.h"
 
 /**
- * times_tamltle - Prints the 9 times tamltle
+ * times_table - Prints the 9 times table
  *
  * Return: no return
  */
-void times_tamltle(void)
+void times_table(void)
 {
-	int nmr, mlt, pr;
+	int a, b, op;
 
-	for (nmr = 0; nmr <= 9; a++)
+	for (a = 0; a <= 9; a++)
 	{
 
 		_putchar(48);
-		for (mlt = 1; mlt <= 9; mlt++)
+		for (b = 1; b <= 9; b++)
 		{
-			pr = nmr * mlt;
+			op = a * b;
 			_putchar(44);
 			_putchar(32);
-			if (pr <= 9)
+			if (op <= 9)
 			{
 				_putchar(32);
-				_putchar(pr + 48);
+				_putchar(op + 48);
 			}
 			else
 			{
-				_putchar((pr / 10) + 48);
-				_putchar((pr % 10) + 48);
+				_putchar((op / 10) + 48);
+				_putchar((op % 10) + 48);
 			}
 		}
 		_putchar('\n');
